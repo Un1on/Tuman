@@ -1,0 +1,39 @@
+//@import "node_modules/bootstrap/scss/bootstrap";
+
+@import './components/_fonts.scss';
+
+@import './components/_mixins.scss';
+@import './components/_variable.scss';
+@import './components/_basicUI.scss';
+
+@import './components/_heroSection.scss';
+@import './components/_cards.scss';
+@import './components/_section_recommendcasino.scss';
+@import './components/_promo.scss';
+@import './components/_newsSlider.scss';
+@import './components/_specialTxt.scss';
+@import './components/_modalMenu.scss';
+@import './components/_casinoList.scss';
+@import './components/_casino.scss';
+@import './components/_faq.scss';
+@import './components/_sideBar.scss';
+@import './components/_bookmaker.scss';
+@import './components/_newsList.scss';
+@import './components/_bookmakerList.scss';
+@import './components/_pageContact.scss';
+@import './components/_newsSinglePage.scss';
+@import './components/_slotsPage.scss';
+@import './components/_slotsPageSingle.scss';
+@import './components/_404.scss';
+@import './components/_access-denied.scss';
+@import './components/_streamers.scss';
+@import './components/_tournament.scss';
+@import './components/_single-tournament.scss';
+@import './components/_partners.scss';
+
+@import './components/_header.scss';
+@import './components/_footer.scss';
+
+:root {
+    --vh: 1vh;
+}

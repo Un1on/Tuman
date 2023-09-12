@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Fellaz';
+    src: url('../dist/fonts/Fellaz/FellazBold.eot');
+    src: url('../dist/fonts/Fellaz/FellazBold.eot') format('embedded-opentype'),
+        url('../dist/fonts/Fellaz/FellazBold.woff2') format('woff2'),
+        url('../dist/fonts/Fellaz/FellazBold.woff') format('woff'),
+        url('../dist/fonts/Fellaz/FellazBold.ttf') format('truetype'),
+        url('../dist/fonts/Fellaz/FellazBold.svg#Fellaz') format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellaz';
+    src: url('../dist/fonts/Fellaz/FellazRegular.eot');
+    src: url('../dist/fonts/Fellaz/FellazRegular.eot') format('embedded-opentype'),
+        url('../dist/fonts/Fellaz/FellazRegular.woff2') format('woff2'),
+        url('../dist/fonts/Fellaz/FellazRegular.woff') format('woff'),
+        url('../dist/fonts/Fellaz/FellazRegular.ttf') format('truetype'),
+        url('../dist/fonts/Fellaz/FellazRegular.svg#FellazRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AristotelicaDisplay';
+    src: url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.eot');
+    src: url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.eot') format('embedded-opentype'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.woff2') format('woff2'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.woff') format('woff'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.ttf') format('truetype'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayBold.svg#FellazRegular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AristotelicaDisplay';
+    src: url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.eot');
+    src: url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.eot') format('embedded-opentype'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.woff2') format('woff2'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.woff') format('woff'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.ttf') format('truetype'),
+    url('../dist/fonts/AristotelicaDisplay/AristotelicaDisplayRegular.svg#FellazRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentral';
+    src: url('../dist/fonts/Sentral/Sentral-Bold.eot');
+    src: url('../dist/fonts/Sentral/Sentral-Bold.eot') format('embedded-opentype'),
+    url('../dist/fonts/Sentral/Sentral-Bold.woff2') format('woff2'),
+    url('../dist/fonts/Sentral/Sentral-Bold.woff') format('woff'),
+    url('../dist/fonts/Sentral/Sentral-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentral';
+    src: url('../dist/fonts/Sentral/Sentral-Regular.eot');
+    src: url('../dist/fonts/Sentral/Sentral-Regular.eot') format('embedded-opentype'),
+    url('../dist/fonts/Sentral/Sentral-Regular.woff2') format('woff2'),
+    url('../dist/fonts/Sentral/Sentral-Regular.woff') format('woff'),
+    url('../dist/fonts/Sentral/Sentral-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

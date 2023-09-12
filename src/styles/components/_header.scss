@@ -1,0 +1,111 @@
+.header {
+  width: 100%;
+  @extend .flex;
+  @extend .flex-wrap;
+  @extend .flex-h-center;
+  @extend .flex-v-start;
+  padding: 30px 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all .6s;
+
+  &__logo {
+    width: 100%;
+    display: block;
+    max-width: 250px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__left {
+    margin-right: 15px;
+  }
+
+  &__right {
+    margin-left: 15px;
+  }
+
+  &__left, &__right {
+    width: 15%;
+  }
+
+  &__center {
+    width: calc(70% - 30px);
+  }
+
+  .basicBtn {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &.fixed {
+    background-color: var(--primary);
+    padding: 15px 0;
+    box-shadow: 0 0 15px 0 var(--black);
+  }
+
+  @media screen and (max-width: 1700px) {
+    &__center {
+      width: calc(70% - 90px);
+    }
+
+    &__left {
+      margin-right: 45px;
+    }
+
+    &__right {
+      margin-left: 45px;
+    }
+
+    .menu__list--item {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    &__center,.menu {
+      display: none;
+    }
+
+    &__left, &__right {
+      width: 50%;
+      margin: 0;
+    }
+
+    &__right {
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 15px 0;
+    max-height: 70px;
+
+    &__left {
+      width: 30%;
+    }
+
+    &__right {
+      width: 70%;
+    }
+
+    &__logo {
+      max-width: 100px;
+    }
+
+    .basicBtn {
+      font-size: 0.65em;
+      line-height: 0.85em;
+      padding: 5px 7px;
+      margin-right: 5px;
+    }
+  }
+}
+

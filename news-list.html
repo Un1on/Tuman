@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tuman Casino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/style.min.css">
+
+  <!-- CSS Variables for colors -->
+  <style>
+    :root {
+      --white: #fff;
+      --black: #000;
+      --primary: #091040;
+      --primary_rgba: rgb(9, 16, 64);
+      --primary_rgba_7: rgba(9, 16, 64, .7);
+      --btn_background: #283151;
+      --btn_background_7: rgba(40, 49, 81, .7);
+      --gradient_start: #fd035f;
+      --gradient_end: #6c2c8c;
+      --cards_bg_type_1: #121a4e;
+      --shadow_rgba_8: rgba(166, 33, 113, 0.8);
+      --scroll_bg: #6674ca;
+      --tops_items_bg: #0d1440;
+      --news_gradient_start: #cb2573;
+      --news_gradient_end: #47069a;
+    }
+  </style>
+  <!-- END -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__cont flex flex-wrap flex-v-center flex-h-between basic-container">
+      <div class="header__left flex flex-wrap flex-v-center flex-h-start">
+        <a href="javascript:void(0);" class="header__logo glitchEffect">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+        </a>
+      </div>
+      <div class="header__center flex flex-wrap flex-v-center flex-h-center">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/chips.svg" alt="" class="icon">
+                <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Онлайн казино</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/flying-money.svg" alt="" class="icon">
+                <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Букмекеры</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/user(2).svg" alt="" class="icon">
+                <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Стримеры</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+                <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Новости</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+                <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Соревнования</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+                <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Инвестиции</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/slot(1).svg" alt="" class="icon">
+                <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Free slots</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/discussion.svg" alt="" class="icon">
+                <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Форум</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right flex flex-wrap flex-v-center flex-h-center">
+        <a href="javascript:void(0);" class="basicBtn  basicBtn_small">
+          Вход
+        </a>
+        <a href="javascript:void(0);" class="basicBtn basicBtn_small basicBtn_transparentize">
+          Регистрация
+        </a>
+        <button class="mobileMenuToggler"></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="parallax parallax--nl" style="background-image: url(./dist/images/parallax__figure_map.png);">
+    <div class="parallax_inner parallax_inner--nl ">
+      <div class="parallax_img parallax_img_1 ">
+        <img src="./dist/images/parallax__figure_big_vawe.png" alt=" Tuman Casino">
+      </div>
+      <div class="parallax_img parallax_img_2">
+        <img src="./dist/images/parallax__figure_corner_decor.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='2' class="parallax_img parallax_img_3 parallax_img_3--nl  parallax_desc glitchEffect">
+        <img src="./dist/images/parallax__figure_mask.png" alt="Tuman Casino">
+        <img src="./dist/images/parallax__figure_mask.png" alt="Tuman Casino">
+        <img src="./dist/images/parallax__figure_mask.png" alt="Tuman Casino">
+        <img src="./dist/images/parallax__figure_mask.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='5' class=" parallax_desc parallax_img parallax_img_4 parallax_img_4--nl ">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-5' class=" parallax_desc parallax_img parallax_img_5 parallax_img_5--nl">
+        <img src="./dist/images/parallax__figure_circle_trp.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-1' class=" parallax_desc parallax_img parallax_img_6 parallax_img_6--nl">
+        <img src="./dist/images/parallax__figure_circle_trp.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='3' class=" parallax_desc parallax_img parallax_img_7 parallax_img_7--nl">
+        <img src="./dist/images/parallax__figure_pink_circle.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='-5' class=" parallax_desc parallax_img parallax_img_8 parallax_img_8--nl">
+        <img src="./dist/images/parallax__figure_plus_smoll.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='2' class=" parallax_desc parallax_img parallax_img_9 parallax_img_9--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='-1' class=" parallax_desc parallax_img parallax_img_10 parallax_img_10--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='5' class=" parallax_desc parallax_img parallax_img_11 parallax_img_11--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='1' class=" parallax_desc parallax_img parallax_img_12 parallax_img_12--nl">
+        <img src="./dist/images/parallax__figure_quadro.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-3' class=" parallax_desc parallax_img parallax_img_13 parallax_img_13--nl">
+        <img src="./dist/images/parallax__figure_quadro.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='2' class=" parallax_desc parallax_img parallax_img_14 parallax_img_14--nl">
+        <img src="./dist/images/parallax__figure_white_circle.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='1' class=" parallax_desc parallax_img parallax_img_15 parallax_img_15--nl">
+        <img src="./dist/images/parallax__figure_white_circle.png" alt="Tuman Casino">
+      </div>
+      <!-- <div data-speed='4' class=" parallax_desc parallax_img parallax_img_16 parallax_img_16--fs">
+        <img src="./dist/images/parallax__figure_diver-front.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='4' class=" parallax_desc parallax_img parallax_img_17 parallax_img_17--fs">
+        <img src="./dist/images/parallax__figure_diver-rear.png" alt="Tuman Casino">
+      </div> -->
+    </div>
+  </section>
+
+  <section class="newsPage newsPage--nl">
+    <div class="newsPage__cont basic-container">
+      <div class="searchBlock">
+        <form action="javascript:void(0);" class="searchBlock__search-form">
+          <div class="searchBlock__search-cont">
+            <div class="searchBlock__search">
+              <input type="text" class="inpt" placeholder="Поиск">
+              <button class="sbmt" type="submit"></button>
+            </div>
+          </div>
+          <div class="searchBlock__category-cont">
+            <select class="niceSelect searchBlock__category">
+              <option value="all">Категории</option>
+              <option value="online">Онлайн казино</option>
+              <option value="license">Лицензированные казино</option>
+              <option value="pirate">Пиратские казино</option>
+              <option value="script">Скриптовые казино</option>
+              <option value="instant-withdrawal">Казино с мгновенным выводом средств</option>
+              <option value="without-verification">Казино без верификации аккаунта</option>
+              <option value="cryptocurrency">Криптовалютные казино</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="withSideBar newsPage__items-cont">
+        <div class="newsPage__items">
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news1.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: 1xBet
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news2.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Jet.casino
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news3.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Самого длинного букмекера
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news4.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: 1xBet
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news5.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Jet.casino
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news6.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Самого длинного букмекера
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news1.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: 1xBet
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news2.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Jet.casino
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news3.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Самого длинного букмекера
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news4.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: 1xBet
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news5.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Jet.casino
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news6.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Самого длинного букмекера
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news1.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: 1xBet
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news2.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Jet.casino
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="newsPage__item">
+            <h3 class="tit">
+              Слот уже на подходе
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="desc">
+              Вчера сыграла ставка с коэфицентом в 25 и алеша теперь сказочн
+            </div>
+
+            <div class="thumb">
+              <img src="./dist/images/news3.jpg" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+
+            <span class="author">
+              Новость от: Самого длинного букмекера
+            </span>
+          </a>
+
+        </div>
+
+        <div class="pagination">
+          <div class="pagination__buttons">
+            <a href="javascript:void(0);" class="pagination__button pagination__button--prev">
+              <img src="./dist/images/arrow-pagination-prev.svg" alt="prev">
+              Предыдущая страница
+            </a>
+            <a href="javascript:void(0);" class="pagination__button pagination__button--next">
+              Следующая страница
+              <img src="./dist/images/arrow-pagination-next.svg" alt="next">
+            </a>
+          </div>
+          <div class="pagination__pages">
+            <form action="javascript:void(0);" class="pagination__pages--form">
+              <div class="text">
+                Страница
+                <div class="inpt__cont">
+                  <input type="number" class="inpt" value="25">
+                </div>
+                <span class="text__total">из 477</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar">
+        <div class="sideBarWidget">
+          <div class="sideBarWidget__title">
+            Топ казино
+          </div>
+          <div class="sideBarWidget__content">
+            <div class="TopCasinoList">
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList1.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList2.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList3.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList4.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList5.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList6.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList7.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList8.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList9.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList10.png" alt="" class="thumb">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBarWidget">
+          <div class="sideBarWidget__title">
+            Топ букмекеров
+          </div>
+          <div class="sideBarWidget__content">
+            <div class="TopBukmekersList">
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList1.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList2.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList3.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList4.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList5.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList6.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList7.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList8.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList9.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList10.png" alt="" class="thumb">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="basic-container footer__descktop flex flex-wrap flex-v-start flex-h-center">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Букмекеры
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Стримеры
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Онлайн казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Новости
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Соревнования
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Лицензированные казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Пиратские казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Скриптовые казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              О нас
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Партнёрство
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              FAQ
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <span class="footer__title">
+        Играйте ответственно и умеренно.
+      </span>
+
+      <div class="footer__columns flex flex-v-center flex-wrap flex-h-center">
+        <div class="column">
+          <div class="footer__info">
+            Xmind Ailabs B.V.<br>
+            Doornburg 130, 1081 JX Amsterdam, the Netherlands<br>
+            70948194 <br>
+            Mr. Jacov Moustafaev <br>
+            Bunq Bank B.V. <br>
+            Naritaweg 131, 1043 BS Amsterdam, the Netherlands <br>
+            BUNQNL2AXXX <br>
+            NL81 BUNQ 2058 9593 10
+          </div>
+        </div>
+        <div class="column align-self-end flex flex-wrap flex-h-center">
+          <div class="footer__sertificates">
+            <img src="./dist/images/age-limit.png" alt="">
+            <img src="./dist/images/footer_sertificate.png" alt="">
+          </div>
+        </div>
+        <div class="column flex flex-wrap flex-h-end">
+          <div class="footer__social-newsletter">
+            <span class="tit">
+              Подписка на рассылку
+            </span>
+            <form class="footer__newsletter" action="javascript:void(0);">
+              <input type="email" class="inpt" placeholder="Введите почту">
+              <button type="submit" class="sbmt"></button>
+            </form>
+
+            <div class="footer__socials">
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_facebook.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_twitter.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_insta.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_telega.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <a href="javascript:void(0);" class="footer__logo">
+          <img src="./dist/images/logo_empty.png" alt="">
+        </a>
+
+        <div class="footer__copyright--txt">
+          TUMAN PROJECT - это независимый источник информации об онлайн-казино и играх онлайн-казино, не контролируемый
+          никакими операторами азартных игр. Все наши обзоры и руководства
+          созданы честно, в соответствии с лучшими знаниями и суждениями членов нашей независимой экспертной группы; тем
+          не менее, они предназначены только для информационных целей и не должны
+          рассматриваться как юридические консультации. Вы всегда должны убедиться, что выполняете все нормативные
+          требования, прежде чем играть в любом выбранном казино.
+          <br>Авторские права © 2021
+        </div>
+
+        <button class="footer__arrowUp">
+          <img src="./dist/images/up-arrow.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="basic-container footer__mobile flex flex-wrap flex-v-start flex-h-center">
+      <nav class="footerSpecialMenu">
+        <ul class="footerSpecialMenu__list">
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              Категории
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Bookmakers
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Streamers
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                News
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Tournaments
+              </a>
+            </div>
+          </li>
+
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              Казино
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Лицензированные казино
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Пиратские казино
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Скриптовые казино
+              </a>
+            </div>
+          </li>
+
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              О нас
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Партнёрство
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                FAQ
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Контакты
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="titleGrp">
+        <h2 class="titleGrp__title">
+          Играйте ответственно и умеренно.
+        </h2>
+        <div class="titleGrp__desc-mobile">
+          Xmind Ailabs B.V.<br>
+          Doornburg 130, 1081 JX Amsterdam, the Netherlands<br>
+          70948194 <br>
+          Mr. Jacov Moustafaev <br>
+          Bunq Bank B.V. <br>
+          Naritaweg 131, 1043 BS Amsterdam, the Netherlands <br>
+          BUNQNL2AXXX <br>
+          NL81 BUNQ 2058 9593 10
+        </div>
+      </div>
+
+
+      <div class="newsletterForm__mobile">
+        <span class="tit">Подписка на рассылку</span>
+        <form class="footer__newsletter" action="javascript:void(0);">
+          <input type="email" class="inpt" placeholder="Введите почту">
+          <button type="submit" class="sbmt"></button>
+        </form>
+      </div>
+
+      <div class="footer__sertificates--mobile">
+        <div class="cont">
+          <img src="./dist/images/age-limit.png" alt="">
+          <img src="./dist/images/footer_sertificate.png" alt="">
+        </div>
+      </div>
+
+      <div class="footer__socials--mobile">
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_facebook.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_twitter.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_insta.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_telega.png" alt="">
+        </a>
+      </div>
+
+      <div class="footer__copyright--mobile">
+        <div class="footer__copyright--txt">
+          TUMAN PROJECT
+        </div>
+
+        <button class="footer__arrowUp">
+          <img src="./dist/images/up-arrow_mobile.png" alt="">
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modalMenu">
+    <div class="modalMenu__inner">
+      <div class="modalMenu__header">
+        <span class="modalMenu__title">Меню</span>
+        <button class="modalMenu__close"></button>
+      </div>
+      <nav class="modalMenu__cont">
+        <ul class="modalMenu__list">
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/chips.svg" alt="" class="icon">
+              <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+              Онлайн казино
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/flying-money.svg" alt="" class="icon">
+              <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+              Букмекеры
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/user(2).svg" alt="" class="icon">
+              <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+              Стримеры
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+              <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+              Новости
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+              <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+              Соревнования
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+              <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+              Инвестиции
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/slot(1).svg" alt="" class="icon">
+              <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+              Free slots
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/discussion.svg" alt="" class="icon">
+              <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+              Форум
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="./dist/main.min.js"></script>
+</body>
+
+</html>

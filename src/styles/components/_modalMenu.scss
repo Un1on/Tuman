@@ -1,0 +1,181 @@
+.modalMenu {
+  width: 100%;
+  height: 100%;
+  @extend .flex;
+  @extend .flex-wrap;
+  @extend .flex-v-center;
+  @extend .flex-h-center;
+  background: var(--primary);
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: all .6s;
+  overflow-y: auto;
+  z-index: 101;
+
+  &__inner {
+    width: 100%;
+    max-width: 475px;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+
+    @media screen and (max-width: 560px){
+      max-width: 320px;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-center;
+    @extend .flex-h-between;
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+
+  &__close {
+    width: 27.5px;
+    height: 27.5px;
+    background-image: url('../dist/images/icon-close.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    @media screen and (max-width: 560px){
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__title {
+    width: auto;
+    @include font('Sentral', 1.5em, var(--white), 400, 1.5em);
+  }
+
+  &__cont {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+  }
+
+  &__list {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+    @extend .flex-direction-column;
+    &--item {
+      width: 100%;
+      background: var(--cards_bg_type_1);
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-center;
+      @extend .flex-h-start;
+      border-radius: 30px;
+      margin-bottom: 15px;
+
+        &.dev {
+            position: relative;
+
+            &::before {
+                content: 'Coming soon';
+                @include font('Sentral', 12px, var(--white), 400, 11px);
+                display: block;
+                width: max-content;
+                border-radius: 5px;
+                background: linear-gradient(to right, var(--gradient_start), var(--gradient_end));
+                padding: 4px;
+                position: absolute;
+                top: 50%;
+                //left: 0;
+                right: 15px;
+                //margin: 0 auto;
+                transform: translateY(-50%);
+            }
+        }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &_link {
+        width: 100%;
+        border-radius: 30px;
+        @include font('Sentral', 1.5em, var(--white), 400, 1em);
+        @extend .flex;
+        @extend .flex-wrap;
+        @extend .flex-v-center;
+        @extend .flex-h-start;
+        padding: 15px;
+        text-decoration: none;
+        position: relative;
+        transition: all .6s;
+
+        &:visited {
+          color: var(--white);
+          text-decoration: none;
+        }
+
+        .icon {
+          width: 25px;
+          height: auto;
+          margin-right: 15px;
+
+          &_hovered {
+            width: 25px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            z-index: 2;
+            opacity: 0;
+            transition: all .6s;
+          }
+        }
+
+        &:hover {
+          background-image: -webkit-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image: -moz-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image: -o-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image: -ms-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image: linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 0 20px #ff00fb;
+
+          .icon {
+            opacity: 0;
+            &_hovered {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    top: 0;
+  }
+
+  @media screen and (max-width: 560px) {
+    left: -100%;
+    top:0;
+    padding: 15px 0;
+    align-items: flex-start;
+
+    &.open {
+      left: 0;
+    }
+  }
+}

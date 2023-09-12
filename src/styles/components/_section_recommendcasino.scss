@@ -1,0 +1,78 @@
+.recommendCasino {
+  .basicTitle {
+    font-size: 2.25em;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .basicTxt {
+    max-width: 1350px;
+    margin: 0 auro;
+    font-size: 1.125em;
+    letter-spacing: 0.1em;
+  }
+
+  .btnLine {
+    width: 100%;
+    margin: 10px 0 40px 0;
+    .basicBtn {
+      width: auto;
+      border-radius: 55px;
+      font-size: 1.875em;
+      line-height:1em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: 400;
+      letter-spacing: .1em;
+
+      @media screen and (max-width: 992px) {
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 560px) {
+        padding: 8px 30px;
+        font-size: 0.85em;
+        line-height: 1em;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .cst-cards_type2 .cst-card {
+      padding: 10px 15px;
+    }
+
+    .cst-cards_type2 .cst-card__title {
+      font-size: 1.65em;
+      line-height: 1em;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    & {
+      .basicTitle:not(.nm,.rateVal) {
+        font-size: 1em;
+        line-height: 1.35em;
+        margin-bottom: 25px;
+      }
+
+      .cst-cards_type2 .cst-card__title {
+        font-size: .65em;
+        line-height: 1em;
+        margin: 5px 0;
+      }
+
+      .basicTxt:not(.nm) {
+        display: none;
+      }
+    }
+
+    .cst-cards_type2 .cst-card {
+      padding: 5px 12.5px;
+    }
+  }
+}

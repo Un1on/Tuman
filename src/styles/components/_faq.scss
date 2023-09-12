@@ -1,0 +1,475 @@
+.parallax {
+
+  &_inner--faq {
+    padding: 11% 0;
+  }
+
+  &_img_3--faq {
+    width: 45%;
+    left: 26.5%;
+    top: 35%;
+
+    @media screen and (max-width: 992px) {
+      width: 40%;
+      top: 49%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      left: 22.5%;
+    }
+
+  }
+
+  &_img_4--faq {
+    width: 0.5%;
+    left: 27%;
+    top: 57%;
+
+    @media screen and (max-width: 1024px) {
+      top: 34%;
+    }
+  }
+
+  &_img_5--faq {
+    top: 81%;
+    left: 15.5%;
+    width: 3.5%;
+
+    @media screen and (max-width: 768px) {
+      top: 80%;
+      left: 28.5%;
+    }
+
+  }
+
+
+  &_img_6--faq {
+    left: 64%;
+    top: 47%;
+    z-index: -1;
+  }
+
+
+  &_img_7--faq {
+    left: 77%;
+    top: 46.5%;
+    width: 0.3%;
+
+    @media screen and (max-width: 768px) {
+      left: 91%;
+      top: 39%;
+    }
+  }
+
+  &_img_8--faq {
+    top: 76.5%;
+    left: 18.5%;
+
+  }
+
+  &_img_9--faq {
+    top: 74%;
+    left: 39%;
+
+  }
+
+  &_img_10--faq {
+    top: 32.6%;
+    left: 70.5%;
+
+  }
+
+  &_img_11--faq {
+
+    top: 101.5%;
+    left: 73.5%;
+
+
+    @media screen and (max-width: 1024px) {
+      top: 88%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 65%;
+    }
+
+  }
+
+  &_img_12--faq {
+    top: 32%;
+    left: 8.5%;
+
+    @media screen and (max-width: 1024px) {
+      top: 49%;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: 26%;
+      width: 8%;
+    }
+
+  }
+
+  &_img_13--faq {
+    top: 65%;
+    left: 86.6%;
+
+    @media screen and (max-width: 1024px) {
+      top: 43%;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      top: 78%;
+      width: 8%;
+    }
+
+
+  }
+
+  &_img_14--faq {
+    top: 30%;
+    left: 83.5%;
+    width: 0.5%;
+
+  }
+
+  &_img_15--faq {
+    left: 35.8%;
+    top: 34%;
+
+  }
+
+
+  &_img_16--faq {
+    width: 7.5%;
+    left: 21.3%;
+    top: 52%;
+
+    @media screen and (max-width: 992px) {
+      width: 9.5%;
+      left: 18.3%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 13.5%;
+      left: 12.3%;
+    }
+
+  }
+
+  &_img_17--faq {
+    width: 11.25%;
+    left: 73.8%;
+    top: 52.5%;
+
+    @media screen and (max-width: 992px) {
+      width: 15%;
+      top: 51%;
+      left: 69.8%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 19%;
+      top: 51%;
+      left: 74.8%;
+    }
+
+  }
+}
+
+
+.parallax--faq {}
+
+
+
+@media screen and (max-width: 768px) {
+
+  // .newsPage {
+  //     padding-top: 70px !important;
+  // }
+
+  .parallax--nl {}
+
+  // .parallax_inner--faq {
+  //     padding: 30% 0;
+  // }
+
+  .parallax {
+    &_img_12--nl {
+      width: 7.2%;
+    }
+
+    &_img_13--nl {
+      width: 7.2%;
+    }
+  }
+}
+
+.faqPage {
+
+  .faq-info {
+    display: flex;
+    max-width: 1720px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+
+    &__item {
+      padding: 20px 29px 30px 30px;
+      border-radius: 30px;
+      background-color: #0e194e;
+      border: 2px solid transparent;
+      max-width: 540px;
+      position: relative;
+      margin-bottom: 25px;
+      background: linear-gradient(0deg, var(--cards_bg_type_1), var(--cards_bg_type_1)) padding-box, linear-gradient(135deg, var(--gradient_start), var(--gradient_end)) border-box;
+      border: 2px solid transparent;
+      background-color: var(--cards_bg_type_1);
+
+      h3 {
+        @include font('Sentral', 1.5em, var(--white), 700, 26px);
+        letter-spacing: 1.8px;
+        padding-bottom: 9px;
+      }
+
+    }
+
+    &__text {
+      @include font('Sentral', 1em, var(--white), normal, 26px);
+      letter-spacing: 1.3px;
+    }
+  }
+
+  .faq-categories {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1720px;
+    justify-content: space-between;
+
+    &__title {
+      @include font('Sentral', 1.5em, var(--white), normal, 26px);
+      padding: 0 0 16px 22px;
+      letter-spacing: 1.8px;
+    }
+  }
+
+  width: 100%;
+  @extend .flex;
+  @extend .flex-wrap;
+  @extend .flex-v-start;
+  @extend .flex-h-center;
+  padding-top: 160px;
+  padding-bottom: 45px;
+
+  &__cont {
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 25px;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+    padding: 16px 10px 16px 15px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(0deg, var(--cards_bg_type_1), var(--cards_bg_type_1)) padding-box, linear-gradient(135deg, var(--gradient_start), var(--gradient_end)) border-box;
+    border: 2px solid transparent;
+    background-color: var(--cards_bg_type_1);
+
+    .title {
+      width: 100%;
+      position: relative;
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-start;
+      @extend .flex-h-start;
+      @include font('Sentral', 18px, var(--white), 700, 21px);
+      letter-spacing: 1.2px;
+      padding-right: 55px;
+      cursor: pointer;
+
+      &:after {
+        width: 20px;
+        height: 31px;
+        display: block;
+        content: '';
+        background-image: url('../dist/images/bigWhiteArrow.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        right: 10px;
+        top: -5px;
+        transition: all .6s;
+        transform-origin: center;
+
+        @media screen and (max-width: 560px) {
+          width: 20px;
+          height: 31px;
+        }
+      }
+    }
+
+    .hiddenTxt {
+      width: 100%;
+      @include font('Sentral', 1em, var(--white), 400, 18px);
+      display: none;
+      margin-top: 8px;
+      letter-spacing: 1.3px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.open {
+      .title {
+        &:after {
+          transform: rotate(90deg);
+
+          @media screen and (max-width: 560px) {
+            top: 0;
+          }
+        }
+      }
+    }
+
+    &.isOpen {
+      .hiddenTxt {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .faqPage {
+    .faq-info {
+      width: 95%;
+      justify-content: space-evenly;
+    }
+
+    &__cont {
+      flex: 1 1 50%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .faqPage {
+    padding-top: 50px;
+
+    .faq-info {
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 0 20px;
+    }
+
+    &__cont {
+      flex: 1 1 100%;
+    }
+
+    .faq-categories {
+      justify-content: center;
+    }
+  }
+
+  .parallax_inner--faq {
+    padding: 15% 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .parallax_inner--faq {
+    padding: 25% 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer.footer_faq {
+    margin-top: 30px;
+  }
+
+  .faqPage {
+    padding-bottom: 0;
+
+    .faq-info {
+      margin-bottom: 25px;
+
+      &__item {
+        padding: 10px 23px 15px 19px;
+
+        h3 {
+          font-size: 1em;
+          line-height: 16px;
+        }
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .faq-categories {
+      &__title {
+        font-size: 18px;
+        padding: 0 0 3px 9px;
+        letter-spacing: 1.1px;
+      }
+    }
+
+    &__item {
+      padding: 12px 21px 12px 18px;
+      margin-bottom: 13px;
+
+      .title {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 1.4px;
+        padding-right: 25px;
+
+        &::after {
+          width: 17px;
+          height: 12px;
+          right: -10px;
+          top: 3px;
+        }
+      }
+
+      .hiddenTxt {
+        letter-spacing: 0.95px;
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 11px;
+      }
+    }
+
+    &__cont {
+      padding-bottom: 25px;
+    }
+  }
+
+  .parallax_inner--faq {
+    padding: 25% 0;
+  }
+}

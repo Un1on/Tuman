@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuman Casino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.min.css">
+
+    <!-- CSS Variables for colors -->
+    <style>
+        :root {
+            --white: #fff;
+            --black: #000;
+            --primary: #091040;
+            --primary_rgba: rgb(9, 16, 64);
+            --primary_rgba_7: rgba(9, 16, 64, .7);
+            --btn_background: #283151;
+            --btn_background_7: rgba(40, 49, 81, .7);
+            --gradient_start: #fd035f;
+            --gradient_end: #6c2c8c;
+            --cards_bg_type_1: #121a4e;
+            --shadow_rgba_8: rgba(166, 33, 113, 0.8);
+            --scroll_bg: #6674ca;
+            --icon_color: #dc2dca;
+
+            --header-access-denied: #fd035a;
+        }
+    </style>
+    <!-- END -->
+</head>
+
+<body>
+
+    <section class="acces-denied">
+        <div class="acces-denied__body">
+        <h2 class="acces-denied__h2">ДОСТУП ЗАПРЕЩЕН</h2>
+        <p>К сожалению, система определила, что ваш IP из РФ. <br> Если вы находитесь за пределами РФ, пожалуйста,
+            обратитесь к вашему интернет-провайдеру</p>
+        <a href="#!" class="basicBtn basicBtn_gradient acces-denied__link">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="SVGDoc" width="72" height="73" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 72 73">
+                <defs></defs>
+                <desc>Generated with Avocode.</desc>
+                <g>
+                    <g>
+                        <title>Слой 1</title>
+                        <image
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABJCAYAAACesWDiAAAQp0lEQVR4Xt1cCXgUVRKu13NmjmSSTDLJ5CQcCRFY2GW/XW9RFlaUW5b7ZllcFQKiKB8gCBhuBARFjgVcsyACArqKosiKLB4LaghnGALkmlyTyUwyZ3fvV52ETcL0THcyCWTf9+X4vq5Xr97/qupV1XvdBNqwTQ83JkbLoadRpkiVEqp3glQWQREqXkrYGCkhEgqIFABYBljaw7A0A+wNDwslNz3OUjlIzlxwVedSQJ9bXVpa3FZik9YcaASAJD4y5jeJCuWAJLmiX4xUmiqnqAgKCFAEwMOygAKw+IO/uP+wESB1kuEfKSFAsyz31MEwZjPtOV/gcn5e6KWPrSwp+Lk159AqAE3R64295eqhSQrl6Cip7H45oSgaWPDWTbIlE6IAQEIISICAi2VcRR7Xv886HFmlTtuHb1utlpbw9tU3qADNNRg6pMo101IVykkaijIyALdXPtiC1+pZrXZJgYCF9l7Jdbl2mNy23W+UlJiDNV5QAHo2LDE8VU1l9A5R/1ktkcR6WAYQnLZsqFUIVBXtNf1UY9/4CePa/rnZXN1SGVoM0KtRMc/0D4tYoJNIf+Vm2h6YpgAgUDJCoMjl+s+XtsqX15Sbv2oJSM0GaGpoaERfXdTyzkrVDHSe6ETvpYYgsQCeM3bbupOe6mX7S0vtzZGvWQAtjDL2elCr3WmQKnq6cVNuzsht0AcnpyQU3PK4j59yVP55RXFxnthhRQM0U28YNTpcv0lBKL37HtMavskrCPom2rTPWjFtS1nxCTEgiQJoWWzcjAHaiE00C1LctttTq4ulKj+rqpj0mrnwsFDZBQO0NjZxZh9t2HovAMW0E83x5cCBBdsxu2XygqL8A0JAEgTQ4ui46YN1kVs8LCNp6+1byCTE0GCASQjYDlgrxmSaCz4O1DcgQC9GG4eM0UV+QLOsrL2DUw8GgsQCW7GhrGDQ+xbLt/5A8gvQ8+GG7pP00Z8wBBLaq1nxTR7DgBqavrzZWvL43rKyQj46XoD6hoeHzdIZTsTJZL3ay24VyFyaPldSFOS6HEf35V0duh+A9tWfF6Ad8R029FZrZzqY9mFYrNsDjNfLixFWB4hSCaS+TFBHqaYo+LTKMuflolvrBQM0Kzq2/ySd/oibZeXtYTNnvV4I6dwJFAnx9XWTO+fKsmA7ew5oezUQCmsCta32P+J4p9R8/87KkjtKJ3do0IioKM1Ujf5fepm0F5Yn7vmGJRSvF7q+vwvCHvg9r7jOGzche/AIoG02IBJJIzo5oeCm23Hk/byrw5qa2h0ALY+Nmz0wNHJdTTsxLcbtBlXHFOh25EOQqNW8ABW+uwPyliznpQkhFOy2lPxpXWnx/oZMGgE0QK2OmRebfE5FUTH3WvLJN3PabgfjtMmQ/PoiXnBQw3JGjgfb9z8CFaL0SYeRdpnXc3aHyf7Qfsh31BM1AmhFTPyiJ8MilrQXx4x1Wsbjga47t4Lu8cd4AbL//AvkjBgHwNAADfxP0w4qioIsS+m4FSVF798BEJYvxkbF/aSVSBPai/awbjcoEhOg+5EDINWF8QJ0c/U6yF+/CSQajV+XirFRgcd1Zsn1K4/8B8DDue/6Houj48cN1kXscbGM/+i6NR13ky040AaB5mUYOxo6rn6Dl5RxOuH80JFQfeEiUApFIJZcse29itI+b5YVf90IoA+TunyRolD0DRQUsjQN+NMajZLJ4PZxhoABGIcDUrduhogB/Xmprd/+Gy6On8KZVsPtna9DCEXBd9VVO6fn5029DVBGZGzXP0VEfi8F0PgLCxmnC2ImjIHwPzzBba3BarjtugoK4cYbq4BxuQRNhPV4QG4wQPejB0AWpecVxbRwCRTv2A0SDf8O17AzHkk5GaYk03yj26d2eylnTitjE2f20+o2uFj/UTOqdMe1q8AwekSwsGnEJ2fEGKg68wPvTtOQGAO+qOGDofMmnwEwR+q1VkH2wOHgvHkLKLlMsMxYYPugsmx4ZknRQQSIZCV1/jhNoRwQyLzo6mpIeWMpxEwcK3gwMYQFb78LN5at8BvPcPxw93I4oNPGtRA1bAjvEBWffQGX//IcUHK5KNPFHO37avuG6fmmDDJBq42cEp2Qo6IoQ6Csq7UBqrl4Cc4PHw0Y/PnzF2je0vBwzrwUxlhegHIzXoKS/QcCA96EAzrqYo/750XXL/+WPBdpeGJCRNRneAYXKLFAE+u0dhVEt5KJsQwDF0ZPgKrT3/k1M6a6GiIGPAmp2zbzguM2l3Dm5SkrAyLFI3/hDfMzD8u6/15p7kHWxCZOf1wbtjWQeXGa7fGA7tGHQdOzh3gnzbKcqhsmjvcbsxS8sw1uLM30u+rofzquzgTD2JG8sy7dfxBy57wMVEiIcGQaUKKZbS4pGkDWG5O29dGETXMGcNBcX0IA4wosLYhvLLdDpe18F/RDBvJ2r7l8Bc4PG8WN0zSp5BaJprmAr/vh/aBMTuLlc2nqs1Bx7HOQqFTiRa07Lvq0yrKIHExOPZYol/drUeYuJHjEGxp2O+gHPg1dtm7iF5phIGfMRMD4ReJj9ZmaGtD1eQy67tnO63ideTdqM3e73SfIQhBDP3TJWbOBfJaSdjJSKnukuekFOlQQGDhyzjU0DLp/+hGEpHTgldNf5o3mlbL0NYiZOpG3f9GO3XB90RLRzrkhQzSxn2rsR8k/U9LyoqWyJNEahHUYmoaYSeNB070bsLSwwJH10hD20AOgiI/jN7MrV+H8sJHAOBqbGTpxSq6Abh/tA1WXzj77c45+zESo+vaMoHiKTwg5IZDrcp4nx1PS7WFSiVq0BtVl0unv7YSwhx8UorWCaXCSF8dOgspTpxuZGcY+off/DtL/sYfXdKpzLkLOM6Nq/WSTwphgAQC4nKzA475Ivu6YXq2iJCrRJ+x1AKVt28KlHsFuhdv/BnmvLW1kJrTNDkkL5kHcczN4h7v15ltwa9U6wakFHyO8JVLm9V67ZwFy5OZC9hA0M0ettjAM9/e+/Vmg7tHN57zQH+YMGwX27POCMnd/i8oB5KFN5MuUdHvoPWZinOAsCxfHTYbKf53iYhnc9jW9esJ9H2YBl/X7aFXf/QAXxk6qPbkQWTppyg4rjEVe9yXcxYr1UplBtJOui0mihw8BVdc0YD3CnHStIOjgGYh86o9cwYuvFe3YBdcXvc6ZGZpXwtxZkPBiBi993uuZUPjOuwELY0LcATrp625XDu5ip6KksgdFO+m6UbjAkSt9BDzFbiAXC5jXJc+fBwnzXuSV15F7jSt21ccz6XvfA23vX/ukR5rsQc+Aw3S9NjltYVMQCn5xVn9FDielfWFUyPoKBQijYfQH9e1/F3fFSYR8UPN6fHKIf8XRzCZMBczKtb17QbdDHwCl9F10t3x1Ai5NmVFrfi00L5wJatAFR/Vmsjk+OesBlXa0S0g0DADq9DSg8HhFSGriD7O6y9HJixeCKq0Lv5n9bQ/kZsyFxJfmQNKCV3jprr00H8xZe1sUHDZkjhp0wmZdRlYY41/or4nYGKhYxgVpUincd3AvqNO7ilMXPmoMNvEyuZ+TBkeuCbIHDoMu72ziEmVfzVNWDtmDhoO7qBgIjwMXKzCWXreUFo0grxrinh4aGn6ECeBEbgN06ANQd00VO16z6dG/4YFf/My/giwqyiefso+OwtWZs4FSNi9zb8oUvSnDgntXRWEvMk6vj52uM2QrCYn0VzC7DdCBvaC+L0gaJBA2rOnIIiJ4z7SuzHgByj7+Z7Mz96Zi4BZf6fVmrzV5fkvwfYoRyZ1PdJKHPIw3Vnmtoc7Euh05AKounQROrfXJnLfy4fygZ8BrtYoujPFJp6hNVHdNvmWazO3Na2KTFjyhDVvqzw/Va1Dnt94EVddU8QUzP34Idx2F0QhEJq7yhyyL92SBaf7CoGkP8kSAjlrLJy4qLtjDATRbH9t7ZHjkaQIgC1R2leA2K5XwXzMRqzQsAO10QseVy0E/+GlxvTEMGD8FLCe/8Vk7EseslhoBoYGtWlRW2P24xXKTA+gxAOmcDmmnjDLZ7wJF1NyhYSAUxUhGgLuzox/0FKRu2yKmJ9Rcvgo5w0ZyAPuqPopiVkeM23u2o/rwhFvXuOOS2+HvstjEjKdDdeudd+HaS20hLZS7wqL0k3o0nXDB5q1wY/nKFmfuDflioWyvpXTYipKiQ40AmhEZGTcmPObnQLtZc1ZFSB9MFVIy8cxtnBBy7gDh/IixYD97jje6FsSoARHuXuVez+VMW3nvr+ve7WiUQG2MS97yqCb02btx/YWrNT/yMHT9+06/V1Tq54PX6S6MmsAFLNzri0FoeP3lcFX5nIVFBbePaxtxHqiNTJsfE/ujBEAd6BAxCPI0ZoH1Hrkcuh3c5zf1qO90M3M15G/aEpTMHXni3elqhs7LLM3/zbGqqor6ce6A/k1j0po+2rAX74YWoZklzZ8Hcc/zVwxRcKwgYOaOR0RCrrQIWUy8gnfQWjFriTl/Y0P6OwAarY42PBsb9V0IRSUJzfCFCCCEBieu7fkrSN25lStZsD4CV8wHK7/5Fq78NQPwPelgZO5Yfy73en6Ya7rU5xeARm8p+jTe+QbjlJE6/XYHE+AylZBZi6LB+IFw11q442IfFQYExVNprY2c/SS5YoZVEsq5u9w8cH25+XjTfnzejexL6nwgVREyVNCJqxhpAtFihu/x+A21EBix5+18w2LW/mONfd3UWyaflTte9z9Ep0vOiDSe1lCSWG9QI8NACLXdcyyKlXg9Z9dYzI8ft1isvkb2uz9mRMU8OTE8ep+bZbTBDJ7bDgL+kfAqOR5cvG0x99tRWnqOjzJgALEyNjGjX6huPb7R/P8CEl5vkRHi3VVRMnFDmTnL34IFBAg7b4zrsPZRjXbO3dj6g61tOGF89eCYtSLjFXP+hkD8BQGE2rg9oePG3iHq57Ek0l41qRYcAqdrbK8+l5+3IhA4+FwoQFzGPzI+Zc39as0sVzs0N4r7MgOw39itr8wqvLlKCDiiAKpnuDImaWHfsNBXGBZUbR1ICp1UU7raN57BcdRaMXtZScFWMXwEa1BDppvik4b3UKq3aihJJH7i5l5uGCVXMfS1kzbr9MXmAtGfqWgWQAjItPDoHkN04euMMvkTWGRr8+Q2wKrUmRReYdl3uKLy1e1W8/XmLGSzAcLB5hoM6lSF+oV0RchLIUQSgV99udv6VL9L1TB0/pc262rGnL9lMYCYiwONcGwRQPWc5kZH9+iuCFucrlQMpgihgvEhJbGrjRNBX+NhWecFZ02WyV29bJm5eVrTcOygAFTPcFG08Q89VOoXEmWKAfhNsrYwPQz6EBg3y9bkuV2HLjlr3lpsLjgjFuBmR9LNGWi2PubRXiGaCR0U8qfUlMSAPOq1qqUmiCuK/gVTBeRlo2mTyeX4+KLTuXt1WdHZ5sjb4ki6uYNOi4iIT5Sp/thRoRwUJ5N3V1BUMr4oUg9S/YfbkH9D4BqqNQECElL7HKt+eLhpo735hbTnlMnpOmqTMJ+vLSwsa66MgfoF1cT8DTbXYIiOp1RpQDEPGaTSbgoi6RUmkWiVhFLJCAn3BZKbZcucLO2s9NKVNMAP19xOkwO8J3Pt9ov/sNlaDZRW80GBVqPh86EaQ3R/nTrMwtCaHGdN505SeUS4TKpigWHLPd5qk9td+qAm9BoLVM1xa4nlkM1WLoZ/sGj/C7dOvfoWzruZAAAAAElFTkSuQmCC"
+                            width="72" height="73" transform="matrix(1,0,0,1,0,0)"></image>
+                    </g>
+                </g>    
+            </svg>Express vpn</a>
+        </div>
+        <img class="acces-denied__logo" src="./dist/images/access-denied-logo.png" alt="logo">
+    </section>
+
+
+
+    <script src="./dist/main.min.js"></script>
+</body>
+
+</html>

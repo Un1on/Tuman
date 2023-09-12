@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Flat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="72 24 368 464" enable-background="new 72 24 368 464" xml:space="preserve">
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="72" y1="352" x2="440" y2="352">
+		<stop  offset="0" style="stop-color:#FD035F"/>
+		<stop  offset="1" style="stop-color:#6C2C8C"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M72,440c0-131.4,82.4-224,184-224s184,92.6,184,224c0,0-80,48-184,48C160,488,72,440,72,440z"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="160" y1="120" x2="352" y2="120">
+		<stop  offset="0" style="stop-color:#FD035F"/>
+		<stop  offset="1" style="stop-color:#6C2C8C"/>
+	</linearGradient>
+	<circle fill="url(#SVGID_2_)" cx="256" cy="120" r="96"/>
+</g>
+</svg>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tuman Casino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/style.min.css">
+
+  <!-- CSS Variables for colors -->
+  <style>
+    :root {
+      --white: #fff;
+      --black: #000;
+      --primary: #091040;
+      --primary_rgba: rgb(9, 16, 64);
+      --primary_rgba_7: rgba(9, 16, 64, .7);
+      --btn_background: #283151;
+      --btn_background_7: rgba(40, 49, 81, .7);
+      --gradient_start: #fd035f;
+      --gradient_end: #6c2c8c;
+      --cards_bg_type_1: #121a4e;
+      --shadow_rgba_8: rgba(166, 33, 113, 0.8);
+      --scroll_bg: #6674ca;
+      --tops_items_bg: #0d1440;
+      --partners_gradient_start: #cb2573;
+      --partners_gradient_end: #47069a;
+      /* gradient border values */
+      --gradient_start: #fd035f;
+      --gradient_end: #6c2c8c;
+      --cards_bg_type_1: #121a4e;
+    }
+  </style>
+  <!-- END -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__cont flex flex-wrap flex-v-center flex-h-between basic-container">
+      <div class="header__left flex flex-wrap flex-v-center flex-h-start">
+        <a href="javascript:void(0);" class="header__logo glitchEffect">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+          <img src="./dist/images/logo.png" alt="Tuman Casino">
+        </a>
+      </div>
+      <div class="header__center flex flex-wrap flex-v-center flex-h-center">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/chips.svg" alt="" class="icon">
+                <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Онлайн казино</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/flying-money.svg" alt="" class="icon">
+                <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Букмекеры</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/user(2).svg" alt="" class="icon">
+                <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Стримеры</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+                <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Новости</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+                <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Соревнования</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+                <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Инвестиции</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/slot(1).svg" alt="" class="icon">
+                <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Free slots</span>
+              </a>
+            </li>
+            <li class="menu__list--item">
+              <a href="javascript:void(0);" class="menu__list--item-link">
+                <img src="./dist/images/discussion.svg" alt="" class="icon">
+                <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+                <span class="txt">Форум</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right flex flex-wrap flex-v-center flex-h-center">
+        <a href="javascript:void(0);" class="basicBtn  basicBtn_small">
+          Вход
+        </a>
+        <a href="javascript:void(0);" class="basicBtn basicBtn_small basicBtn_transparentize">
+          Регистрация
+        </a>
+        <button class="mobileMenuToggler"></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="parallax parallax--nl">
+    <div class="parallax_inner parallax_inner--nl ">
+      <div class="parallax_img parallax_img_1 ">
+        <img src="./dist/images/parallax__figure_big_vawe.png" alt=" Tuman Casino">
+      </div>
+      <div class="parallax_img parallax_img_2">
+        <img src="./dist/images/parallax__figure_corner_decor.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='4' class="parallax_img parallax_img_3-partners parallax_img_5  parallax_desc glitchEffect">
+        <img src="./dist/images/partners-par1.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par1.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par1.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par1.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-4' class="parallax_img parallax_img_3_1-partners parallax_img_5  parallax_desc glitchEffect">
+        <img src="./dist/images/partners-par2.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par2.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par2.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par2.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='2' class="parallax_img parallax_img_3_2-partners parallax_img_4  parallax_desc glitchEffect">
+        <img src="./dist/images/partners-par3.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par3.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par3.png" alt="Tuman Casino">
+        <img src="./dist/images/partners-par3.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='5' class=" parallax_desc parallax_img parallax_img_4 parallax_img_4--nl ">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-5' class=" parallax_desc parallax_img parallax_img_5 parallax_img_5--nl">
+        <img src="./dist/images/parallax__figure_circle_trp.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-1' class=" parallax_desc parallax_img parallax_img_6 parallax_img_6--nl">
+        <img src="./dist/images/parallax__figure_circle_trp.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='3' class=" parallax_desc parallax_img parallax_img_7 parallax_img_7--nl">
+        <img src="./dist/images/parallax__figure_pink_circle.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='-5' class=" parallax_desc parallax_img parallax_img_8 parallax_img_8--nl">
+        <img src="./dist/images/parallax__figure_plus_smoll.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='2' class=" parallax_desc parallax_img parallax_img_9 parallax_img_9--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='-1' class=" parallax_desc parallax_img parallax_img_10 parallax_img_10--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='5' class=" parallax_desc parallax_img parallax_img_11 parallax_img_11--nl">
+        <img src="./dist/images/parallax__figure_plus.png" alt="Tuman Casino">
+      </div>
+
+      <div data-speed='1' class=" parallax_desc parallax_img parallax_img_12 parallax_img_12--nl">
+        <img src="./dist/images/parallax__figure_quadro.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='-3' class=" parallax_desc parallax_img parallax_img_13 parallax_img_13--nl">
+        <img src="./dist/images/parallax__figure_quadro.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='2' class=" parallax_desc parallax_img parallax_img_14 parallax_img_14--nl">
+        <img src="./dist/images/parallax__figure_white_circle.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='1' class=" parallax_desc parallax_img parallax_img_15 parallax_img_15--nl">
+        <img src="./dist/images/parallax__figure_white_circle.png" alt="Tuman Casino">
+      </div>
+      <!-- <div data-speed='4' class=" parallax_desc parallax_img parallax_img_16 parallax_img_16--fs">
+        <img src="./dist/images/parallax__figure_diver-front.png" alt="Tuman Casino">
+      </div>
+      <div data-speed='4' class=" parallax_desc parallax_img parallax_img_17 parallax_img_17--fs">
+        <img src="./dist/images/parallax__figure_diver-rear.png" alt="Tuman Casino">
+      </div> -->
+    </div>
+  </section>
+
+  <section class="partners partners--nl">
+    <div class="partners__cont basic-container">
+
+
+      <div class="withSideBar partners__items-cont">
+        <div class="partners__items">
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+          <a href="javascript:void(0);" class="partners__item">
+            <h3 class="tit">
+              1xBet
+            </h3>
+
+            <div class="decor"></div>
+
+            <div class="thumb">
+              <img src="./dist/images/partners.png" alt="">
+
+              <span class="basicBtn notHover">
+                Подробнее
+              </span>
+            </div>
+          </a>
+
+
+        </div>
+        <div class="partners__content">
+          <h2>
+            Немного текста о странице партнерство
+          </h2>
+          <p>
+            Мы тщательно рассмотрели Lucky Tiger Casino и дали ему хорошую оценку в нашем рейтинге. Это хорошее место
+            для игры, но есть некоторые вещи, которые стоит отметить. В нашем обзоре мы рассмотрели жалобы игроков на
+            данное казино, его предполагаемые доходы, лицензию, подлинность игр, качество работы поддержки,
+            справедливость условий и положений, лимиты на вывод и выигрыш и другие факторы. Lucky Tiger Casino имеет
+            отношение к другим онлайн-казино, представленным ниже, и их плюсы положительно влияют на рейтинг друг друга.
+            Подробный обзор на это казино ниже.
+          </p>
+          <ul>
+            <li>Согласно нашим исследованиям, Lucky Tiger Casino является мелким онлайн-казино с хорошим доходом. Доход
+              казино является важным фактором, поскольку у крупных казино не должно быть проблем с выплатой больших
+              выигрышей, в то время как более мелкие казино могут столкнуться трудностями, если вам удастся выиграть у
+              них</li>
+            <li>Мы не нашли объективных жалоб на это казино.</li>
+          </ul>
+
+          <ol>
+            <li>Это хорошее место для игры, но есть некоторые вещи, которые стоит отметить. В нашем обзоре мы
+              рассмотрели жалобы игроков на данное казино, его предполагаемые доходы, лицензию, подлинность игр,
+              качество работы поддержки, справедливость условий и положений, лимиты на вывод и выигрыш и другие факторы.
+            </li>
+            <li>Мы не нашли объективных жалоб на это казино. </li>
+            <li>Lucky Tiger Casino — хорошее онлайн-казино. Мы дали ему этот рейтинг, потому что мы думаем, что казино
+              делает все хорошо, однако есть то, что не дает нам дать ему очень хорошую или отличную оценку. Даже
+              несмотря на это, можно полагать, что казино будет хорошим местом для игры.</li>
+          </ol>
+
+          <blockquote>
+            <p>According to our research and estimates, Play Fortuna Casino is one of the biggest online casinos with
+              huge revenue and number of players. The revenue of a casino is an important factor, as bigger casinos
+              shouldn't have any issues paying out big wins, while smaller casinos could potentially struggle if you
+              manage to win really big.We</p>
+          </blockquote>
+          <div class="outrich">
+            <h2>Вы можете стать нашими партнерами</h2>
+            <p>Небольшое описание как работает аутрич ссылка
+              как ее добавлять и для чего она нужна</p>
+
+            <div class="searchBlock">
+              <form action="javascript:void(0);" class="searchBlock__search-form">
+                <div class="searchBlock__category-cont">
+                  <select class="niceSelect searchBlock__category">
+                    <option value="0" selected >ВЫБЕРИТЕ РАЗМЕР</option>
+                    <option value="178" >178x62</option>
+                    <option value="200" >200x100</option>
+                    <option value="250">250x120</option>
+                  </select>
+                </div>
+              </form>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="SVGDoc" class="outrich__svg" width="178" height="auto" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 178 62">
+                <defs></defs>
+                <desc>Generated with Avocode.</desc>
+                <g>
+                  <g>
+                    <title>tuman</title>
+                    <image
+                      xlink:href="data:image/png;base64,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"
+                      width="178" height="62" transform="matrix(1,0,0,1,0,0)"></image>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="copy">
+              <div id="copy" class="selecttitle">test12123123</div>
+              <button class="copy__button" onclick="CopyToClipboard('copy')">
+                скопировать
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar">
+        <div class="sideBarWidget">
+          <div class="sideBarWidget__title">
+            Топ 10 казино
+          </div>
+          <div class="sideBarWidget__content">
+            <div class="TopCasinoList">
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList1.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList2.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList3.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList4.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList5.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList6.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList7.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList8.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList9.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList10.png" alt="" class="thumb">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBarWidget">
+          <div class="sideBarWidget__title">
+            Топ 10 букмекеров
+          </div>
+          <div class="sideBarWidget__content">
+            <div class="TopBukmekersList">
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList1.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList2.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList3.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList4.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList5.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList6.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList7.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList8.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList9.png" alt="" class="thumb">
+              </a>
+              <a href="javascript:void(0);" class="TopCasinoList__item">
+                <img src="./dist/images/casinoList10.png" alt="" class="thumb">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="basic-container footer__descktop flex flex-wrap flex-v-start flex-h-center">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Букмекеры
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Стримеры
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Онлайн казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Новости
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Соревнования
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Лицензированные казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Пиратские казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Скриптовые казино
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              О нас
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Партнёрство
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              FAQ
+            </a>
+          </li>
+          <li class="menu__list--item">
+            <a href="javascript:void(0);" class="menu__list--item-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <span class="footer__title">
+        Играйте ответственно и умеренно.
+      </span>
+
+      <div class="footer__columns flex flex-v-center flex-wrap flex-h-center">
+        <div class="column">
+          <div class="footer__info">
+            Xmind Ailabs B.V.<br>
+            Doornburg 130, 1081 JX Amsterdam, the Netherlands<br>
+            70948194 <br>
+            Mr. Jacov Moustafaev <br>
+            Bunq Bank B.V. <br>
+            Naritaweg 131, 1043 BS Amsterdam, the Netherlands <br>
+            BUNQNL2AXXX <br>
+            NL81 BUNQ 2058 9593 10
+          </div>
+        </div>
+        <div class="column align-self-end flex flex-wrap flex-h-center">
+          <div class="footer__sertificates">
+            <img src="./dist/images/age-limit.png" alt="">
+            <img src="./dist/images/footer_sertificate.png" alt="">
+          </div>
+        </div>
+        <div class="column flex flex-wrap flex-h-end">
+          <div class="footer__social-newsletter">
+            <span class="tit">
+              Подписка на рассылку
+            </span>
+            <form class="footer__newsletter" action="javascript:void(0);">
+              <input type="email" class="inpt" placeholder="Введите почту">
+              <button type="submit" class="sbmt"></button>
+            </form>
+
+            <div class="footer__socials">
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_facebook.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_twitter.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_insta.png" alt="">
+              </a>
+              <a href="javascript:void(0);" class="socialLnk">
+                <img src="./dist/images/icon_telega.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <a href="javascript:void(0);" class="footer__logo">
+          <img src="./dist/images/logo_empty.png" alt="">
+        </a>
+
+        <div class="footer__copyright--txt">
+          TUMAN PROJECT - это независимый источник информации об онлайн-казино и играх онлайн-казино, не контролируемый
+          никакими операторами азартных игр. Все наши обзоры и руководства
+          созданы честно, в соответствии с лучшими знаниями и суждениями членов нашей независимой экспертной группы; тем
+          не менее, они предназначены только для информационных целей и не должны
+          рассматриваться как юридические консультации. Вы всегда должны убедиться, что выполняете все нормативные
+          требования, прежде чем играть в любом выбранном казино.
+          <br>Авторские права © 2021
+        </div>
+
+        <button class="footer__arrowUp">
+          <img src="./dist/images/up-arrow.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="basic-container footer__mobile flex flex-wrap flex-v-start flex-h-center">
+      <nav class="footerSpecialMenu">
+        <ul class="footerSpecialMenu__list">
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              Категории
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Bookmakers
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Streamers
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                News
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Tournaments
+              </a>
+            </div>
+          </li>
+
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              Казино
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Лицензированные казино
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Пиратские казино
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Скриптовые казино
+              </a>
+            </div>
+          </li>
+
+          <li class="footerSpecialMenu__list--item">
+            <span class="dropMenuToggler">
+              О нас
+            </span>
+            <div class="dropMenuItems">
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Партнёрство
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                FAQ
+              </a>
+              <a href="javascript:void(0);" class="dropMenuItems__link">
+                Контакты
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="titleGrp">
+        <h2 class="titleGrp__title">
+          Играйте ответственно и умеренно.
+        </h2>
+        <div class="titleGrp__desc-mobile">
+          Xmind Ailabs B.V.<br>
+          Doornburg 130, 1081 JX Amsterdam, the Netherlands<br>
+          70948194 <br>
+          Mr. Jacov Moustafaev <br>
+          Bunq Bank B.V. <br>
+          Naritaweg 131, 1043 BS Amsterdam, the Netherlands <br>
+          BUNQNL2AXXX <br>
+          NL81 BUNQ 2058 9593 10
+        </div>
+      </div>
+
+
+      <div class="newsletterForm__mobile">
+        <span class="tit">Подписка на рассылку</span>
+        <form class="footer__newsletter" action="javascript:void(0);">
+          <input type="email" class="inpt" placeholder="Введите почту">
+          <button type="submit" class="sbmt"></button>
+        </form>
+      </div>
+
+      <div class="footer__sertificates--mobile">
+        <div class="cont">
+          <img src="./dist/images/age-limit.png" alt="">
+          <img src="./dist/images/footer_sertificate.png" alt="">
+        </div>
+      </div>
+
+      <div class="footer__socials--mobile">
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_facebook.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_twitter.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_insta.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="socialLnk">
+          <img src="./dist/images/icon_telega.png" alt="">
+        </a>
+      </div>
+
+      <div class="footer__copyright--mobile">
+        <div class="footer__copyright--txt">
+          TUMAN PROJECT
+        </div>
+
+        <button class="footer__arrowUp">
+          <img src="./dist/images/up-arrow_mobile.png" alt="">
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modalMenu">
+    <div class="modalMenu__inner">
+      <div class="modalMenu__header">
+        <span class="modalMenu__title">Меню</span>
+        <button class="modalMenu__close"></button>
+      </div>
+      <nav class="modalMenu__cont">
+        <ul class="modalMenu__list">
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/chips.svg" alt="" class="icon">
+              <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+              Онлайн казино
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/flying-money.svg" alt="" class="icon">
+              <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+              Букмекеры
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/user(2).svg" alt="" class="icon">
+              <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+              Стримеры
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+              <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+              Новости
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+              <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+              Соревнования
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+              <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+              Инвестиции
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/slot(1).svg" alt="" class="icon">
+              <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+              Free slots
+            </a>
+          </li>
+          <li class="modalMenu__list--item">
+            <a href="javascript:void(0);" class="modalMenu__list--item_link">
+              <img src="./dist/images/discussion.svg" alt="" class="icon">
+              <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+              Форум
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="./dist/main.min.js"></script>
+  <script>
+      // начальная инициализация отображаемого текста при загрузке страницы
+      $('.outrich select').each(function () {
+        $('.selecttitle').text($('.outrich select').children('option:selected').text());
+        $('.outrich__svg').attr('width', $('.outrich select').children('option:selected').val());
+        if ($('.outrich select').children('option:selected').val() == 0){
+          $('.selecttitle').text('');
+        }
+      });
+      // изменение текста при изменении select
+      $('.outrich select').change(function () {
+        $('.selecttitle').text($('.outrich .searchBlock__category .list').children('.option.selected').text());
+        $('.outrich__svg').attr('width', $('.outrich .searchBlock__category .list').children('.option.selected[data-value]').attr('data-value'));
+        if ($('.outrich select').children('option:selected').val() == 0){
+          $('.selecttitle').text('');
+        }
+      });
+
+      
+  </script>
+</body>
+
+</html>

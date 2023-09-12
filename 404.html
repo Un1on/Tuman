@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuman Casino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.min.css">
+
+    <!-- CSS Variables for colors -->
+    <style>
+        :root {
+            --white: #fff;
+            --black: #000;
+            --primary: #091040;
+            --primary_rgba: rgb(9, 16, 64);
+            --primary_rgba_7: rgba(9, 16, 64, .7);
+            --btn_background: #283151;
+            --btn_background_7: rgba(40, 49, 81, .7);
+            --gradient_start: #fd035f;
+            --gradient_end: #6c2c8c;
+            --cards_bg_type_1: #121a4e;
+            --shadow_rgba_8: rgba(166, 33, 113, 0.8);
+            --scroll_bg: #6674ca;
+            --icon_color: #dc2dca;
+        }
+    </style>
+    <!-- END -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__cont flex flex-wrap flex-v-center flex-h-between basic-container">
+            <div class="header__left flex flex-wrap flex-v-center flex-h-start">
+                <a href="javascript:void(0);" class="header__logo glitchEffect">
+                    <img src="./dist/images/logo.png" alt="Tuman Casino">
+                    <img src="./dist/images/logo.png" alt="Tuman Casino">
+                    <img src="./dist/images/logo.png" alt="Tuman Casino">
+                    <img src="./dist/images/logo.png" alt="Tuman Casino">
+                </a>
+            </div>
+            <div class="header__center flex flex-wrap flex-v-center flex-h-center">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/chips.svg" alt="" class="icon">
+                                <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Онлайн казино</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/flying-money.svg" alt="" class="icon">
+                                <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Букмекеры</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/user(2).svg" alt="" class="icon">
+                                <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Стримеры</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+                                <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Новости</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+                                <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Соревнования</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+                                <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Инвестиции</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/slot(1).svg" alt="" class="icon">
+                                <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Free slots</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="javascript:void(0);" class="menu__list--item-link">
+                                <img src="./dist/images/discussion.svg" alt="" class="icon">
+                                <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+                                <span class="txt">Форум</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right flex flex-wrap flex-v-center flex-h-center">
+                <a href="javascript:void(0);" class="basicBtn  basicBtn_small">
+                    Вход
+                </a>
+                <a href="javascript:void(0);" class="basicBtn basicBtn_small basicBtn_transparentize">
+                    Регистрация
+                </a>
+                <button class="mobileMenuToggler"></button>
+            </div>
+
+        </div>
+    </header>
+
+<section class="page404">
+    <h2 class="page404__h2">404 EROR<span class="h2__small-text">Страницы не существует</span></h2>
+    <a href="#!" class="basicBtn basicBtn_gradient page404__link">На главную</a>
+    <img class="page404__image" src="./dist/images/404.png" alt="404 image">
+</section>
+
+    <div class="modalMenu">
+        <div class="modalMenu__inner">
+            <div class="modalMenu__header">
+                <span class="modalMenu__title">Меню</span>
+                <button class="modalMenu__close"></button>
+            </div>
+            <nav class="modalMenu__cont">
+                <ul class="modalMenu__list">
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/chips.svg" alt="" class="icon">
+                            <img src="./dist/images/chips_red.svg" alt="" class="icon_hovered">
+                            Онлайн казино
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/flying-money.svg" alt="" class="icon">
+                            <img src="./dist/images/flying-money_red.svg" alt="" class="icon_hovered">
+                            Букмекеры
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/user(2).svg" alt="" class="icon">
+                            <img src="./dist/images/user(2)_red.svg" alt="" class="icon_hovered">
+                            Стримеры
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/newspaper(1).svg" alt="" class="icon">
+                            <img src="./dist/images/newspaper(1)_red.svg" alt="" class="icon_hovered">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/first-place-trophy.svg" alt="" class="icon">
+                            <img src="./dist/images/first-place-trophy_red.svg" alt="" class="icon_hovered">
+                            Соревнования
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/pie-chart.svg" alt="" class="icon">
+                            <img src="./dist/images/pie-chart_red.svg" alt="" class="icon_hovered">
+                            Инвестиции
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/slot(1).svg" alt="" class="icon">
+                            <img src="./dist/images/slot(1)_red.svg" alt="" class="icon_hovered">
+                            Free slots
+                        </a>
+                    </li>
+                    <li class="modalMenu__list--item">
+                        <a href="javascript:void(0);" class="modalMenu__list--item_link">
+                            <img src="./dist/images/discussion.svg" alt="" class="icon">
+                            <img src="./dist/images/discussion_red.svg" alt="" class="icon_hovered">
+                            Форум
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="popupBonus" class="popupBonus">
+        <div class="popupBonus__content">
+            <div class="popupBonus__content--img">
+                <img src="./dist/images/imgPopupBonus.svg" alt="bonus">
+                <!--<img src="./dist/images/imgPopupPoints.svg" alt="points">-->
+                <!--<img src="./dist/images/imgPopupVip.svg" alt="vip">-->
+            </div>
+            <div class="popupBonus__content--text">
+                250% +125FS welcome pack for the first 5 deposits <br>
+                1) 200% booster bonus up to $300 for a deposit of $20 , wager 30x(D+B) <br>
+                2) 50 free spins for a deposit of more than $15. (wager 40xB) <br>
+                3) 25 free spins for a deposit of more than $15. (wager 40xB) <br>
+                4) 50 free spins for a deposit of more than $15. (wager 40xB) <br>
+                5) 50% booster bonus up to $300 for a deposit of $20 , wager 30x(D+B) [Max Bet with bonus 10 EUR / 10
+                USD / 15 CAD / 1000 RUB]
+            </div>
+        </div>
+    </div>
+
+    <!-- Данное окно всплывает после успешной отправки комментария -->
+    <div id="popupFeedbackSent" class="popupFeedbackSent">
+        <div class="popupFeedbackSent__content">
+            <div class="popupFeedbackSent__content--text">
+                <p class="title">Attention</p>
+                <p>In order to prevent spam, we have sent you an email comfirmation link</p>
+            </div>
+            <div class="popupFeedbackSent__content--btn">
+                <button type="button" class="basicBtn basicBtn_gradient">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./dist/main.min.js"></script>
+</body>
+
+</html>

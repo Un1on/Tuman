@@ -1,0 +1,889 @@
+.pageFreeSlotSingle {
+  width: 100%;
+  @extend .flex;
+  @extend .flex-wrap;
+  @extend .flex-h-center;
+  @extend .flex-v-start;
+  padding-top: 200px;
+
+  &__game {
+    width    : 100%;
+    max-width: 1200px;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-h-start;
+    @extend .flex-v-start;
+    margin: 0 auto;
+
+    &.fullscreen_game {
+      position : fixed;
+      top      : 0;
+      left     : 0;
+      max-width: initial;
+      height   : 100vh;
+      z-index  : 101;
+
+      .gameBanner {
+        border-radius: 0;
+      }
+
+      .playGame {
+        border-radius: 0;
+      }
+
+      .gameBanner__item {
+        height       : 100vh;
+        object-fit   : cover;
+        border-radius: 0;
+      }
+
+
+    }
+
+    .game-wrapper {
+      position: relative;
+      width   : 100%;
+
+    }
+
+    .gameBanner {
+      width: 100%;
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-h-start;
+      @extend .flex-v-start;
+      border-radius: 15px 15px 0 0;
+      position     : relative;
+      z-index      : 1;
+      opacity      : 1;
+      visibility   : visible;
+      transition   : all .6s;
+
+      .playGame {
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        background-color: rgba(14, 25, 78, 0.6);
+        @extend .flex;
+        @extend .flex-wrap;
+        @extend .flex-v-center;
+        @extend .flex-h-center;
+        @extend .flex-direction-column;
+        width        : 100%;
+        height       : 100%;
+        border-radius: 15px 15px 0 0;
+        @include font('Sentral', 1.5em, var(--white), 400, 32px);
+        text-transform: uppercase;
+        transition    : all .6s;
+        border        : none;
+        outline       : none;
+
+        .play {
+          transition      : all .6s;
+          width           : 120px;
+          height          : 120px;
+          border-radius   : 50%;
+          z-index         : 0;
+          background-image: linear-gradient(to right, #fd035a 0%, #eb3de7 50%, var(--gradient_end) 100%);
+          margin-bottom   : 15px;
+          position        : relative;
+          @extend .flex;
+          @extend .flex-wrap;
+          @extend .flex-v-center;
+          @extend .flex-h-center;
+          cursor    : pointer;
+          box-shadow: 0 0 13px #eb3de7;
+
+          &:before {
+            content          : "";
+            position         : absolute;
+            width            : 35px;
+            height           : 45px;
+            background-size  : cover;
+            background-repeat: no-repeat;
+            background-image : url('../dist/images/icon-play.svg');
+            position         : absolute;
+            top              : calc(50% - 22.5px);
+            left             : calc(50% - 17.5px);
+            z-index          : 5;
+          }
+
+          @media screen and (max-width: 560px) {
+            width        : 35px;
+            height       : 35px;
+            margin-bottom: 5px;
+
+            &:before {
+              width : 10px;
+              height: 14px;
+              top   : calc(50% - 7px);
+              left  : calc(50% - 5px);
+            }
+          }
+        }
+
+        @media screen and (max-width: 560px) {
+          font-size  : 12px;
+          line-height: 20px;
+        }
+      }
+
+      &__item {
+        width        : 100%;
+        height       : auto;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+
+    .game-wrapper {
+      &.active {
+        .gameBanner {
+          opacity   : 0;
+          visibility: hidden;
+          z-index   : 0;
+        }
+
+        .frame {
+          opacity   : 1;
+          visibility: visible;
+          z-index   : 1;
+        }
+      }
+    }
+
+    .frame {
+      position  : absolute;
+      top       : 50%;
+      left      : 50%;
+      transform : translate(-50%, -50%);
+      z-index   : 0;
+      opacity   : 0;
+      visibility: hidden;
+      transition: all .6s;
+
+      width : 100%;
+      height: 100%;
+
+
+      &__content {
+
+        width : 100%;
+        height: 100%;
+      }
+
+
+    }
+
+    &--footer {
+      width        : 100%;
+      border-radius: 0 0 15px 15px;
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-center;
+      @extend .flex-h-between;
+      background: #121a4e;
+      padding   : 10px 20px;
+
+      .name {
+        width  : auto;
+        display: block;
+        @include font('Sentral', 1.5em, var(--white), 400, 28px);
+      }
+
+      .fullscreen {
+        display            : block;
+        border             : none;
+        cursor             : pointer;
+        width              : 20px;
+        height             : 20px;
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat;
+        background-color   : transparent;
+        background-image   : url('../dist/images/full-screen.svg');
+      }
+
+      @media screen and (max-width: 560px) {
+        padding: 5px 10px;
+
+        .name {
+          font-size  : 14px;
+          line-height: 20px;
+        }
+
+        .fullscreen {
+          width : 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &__subcont {
+    width     : 100%;
+    margin-top: 100px;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+    margin-bottom: 120px;
+
+    .sideBar {
+      margin-right: 50px;
+      margin-left : 0;
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 0;
+      }
+
+      .sideBarWidget {
+        padding: 0;
+      }
+    }
+
+    .withSidebar {
+      width: calc(100% - 590px);
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      margin-top   : 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .information {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-center;
+    @extend .flex-h-start;
+    padding      : 25px;
+    border-radius: 30px;
+    background   : var(--cards_bg_type_1);
+    margin-bottom: 50px;
+
+    .thumb {
+      width        : 100%;
+      max-width    : 400px;
+      margin-right : 30px;
+      border-radius: 30px;
+
+      img {
+        width        : 100%;
+        height       : auto;
+        border-radius: 30px;
+      }
+
+      @media screen and (max-width: 1600px) {
+        max-width   : 100%;
+        margin-right: 0;
+        text-align  : center;
+
+        img {
+          max-width: 400px;
+          margin   : 0 auto;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+
+        img {
+          max-width    : 190px;
+          border-radius: 10px;
+        }
+
+      }
+    }
+
+    .desc {
+      width: calc(100% - 430px);
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-start;
+      @extend .flex-h-start;
+      @include font('Sentral', 22px, var(--white), 400, 30px);
+
+      .tit {
+        width  : 100%;
+        display: block;
+        @include font('Sentral', 30px, var(--white), 700, 36px);
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 1024px) {
+          font-size  : 12px;
+          line-height: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1600px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 560px) {
+        font-size  : 10px;
+        line-height: 15px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      padding      : 5px 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  }
+
+  .infoItems {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-stretch;
+    @extend .flex-h-between;
+
+    .item {
+      width: calc(33.33333% - 20px);
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-start;
+      @extend .flex-h-start;
+      border-radius   : 30px;
+      border: 2px solid transparent;
+      background:
+        linear-gradient(90deg, var(--cards_bg_type_1), var(--cards_bg_type_1)) padding-box;
+      padding         : 25px 30px;
+      transition      : all .6s;
+      z-index         : 0;
+      //background-color: var(--cards_bg_type_1);
+      position        : relative;
+      margin-bottom   : 25px;
+
+      &:not(:last-child) .vl {
+        display: inline-block;
+      }
+
+      .nm {
+        width  : 100%;
+        display: block;
+        @include font('Sentral', 24px, var(--white), 400, 32px);
+        opacity      : 0.5;
+        transition   : all .6s;
+        margin-bottom: 10px;
+      }
+
+      .vl {
+        width: 100%;
+        @include font('Sentral', 30px, var(--white), 700, 36px);
+        transition     : all .6s;
+        background-clip: text;
+        @extend .flex;
+        @extend .flex-wrap;
+        @extend .flex-v-start;
+        @extend .flex-h-start;
+        position: relative;
+
+        .deviceIcon {
+          height      : 45px;
+          width       : auto;
+          margin-right: 30px;
+          position    : relative;
+          z-index     : 1;
+
+          &:last-child,
+          &.notMrg {
+            margin-right: 0;
+          }
+
+          @media screen and (max-width: 1300px) {
+            height: 35px;
+          }
+        }
+
+        .hoverIcons {
+          opacity: 0;
+          @extend .flex;
+          @extend .flex-v-start;
+          @extend .flex-h-start;
+          @extend .flex-wrap;
+          position  : absolute;
+          top       : 0;
+          left      : 0;
+          transition: all .6s;
+          z-index   : 2;
+        }
+      }
+
+      //&:before {
+      //  content      : "";
+      //  position     : absolute;
+      //  z-index      : -1;
+      //  top          : 0;
+      //  left         : 0;
+      //  right        : 0;
+      //  bottom       : 0;
+      //  padding      : 2px;
+      //  border-radius: 30px;
+      //  background   : linear-gradient(to right, var(--gradient_start), var(--gradient_end));
+      //  -webkit-mask :
+      //    linear-gradient(#fff 0 0) content-box,
+      //    linear-gradient(#fff 0 0);
+      //  -webkit-mask-composite: destination-out;
+      //  mask-composite        : exclude;
+      //  opacity               : 0;
+      //  transition            : all .6s;
+      //}
+
+      &:hover {
+        background:
+          linear-gradient(90deg, var(--cards_bg_type_1), var(--cards_bg_type_1)) padding-box,
+          linear-gradient(45deg, var(--gradient_start),var(--gradient_end)) border-box;
+        //&:before {
+        //  opacity: 1;
+        //}
+
+        .nm {
+          opacity: 1;
+        }
+
+        .vl {
+          background-image       : -o-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image       : -o-linear-gradient(76deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image       : linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          .hoverIcons {
+            opacity: 1;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1600px) {
+        width: calc(50% - 10px);
+      }
+
+      @media screen and (max-width: 560px) {
+        width        : calc(70% - 10px);
+        margin-right : 20px;
+        padding      : 10px 15px;
+        border-radius: 10px;
+
+        .nm {
+          font-size    : 14px;
+          line-height  : 20px;
+          margin-bottom: 5px;
+        }
+
+        .vl {
+          font-size  : 14px;
+          line-height: 20px;
+
+          .deviceIcon {
+            height      : 20px;
+            margin-right: 10px;
+          }
+        }
+
+        &:before {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      display : block;
+      position: relative;
+    }
+  }
+
+  .infoDeveloper {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-center;
+    @extend .flex-h-start;
+    border-radius: 30px;
+    background   : var(--cards_bg_type_1);
+    padding      : 25px;
+    margin-bottom: 65px;
+
+    .thumb {
+      width        : 100%;
+      max-width    : 260px;
+      height       : 260px;
+      //z-index      : 0;
+      //position     : relative;
+      background   : #05134e;
+      border-radius: 30px;
+      border: 2px solid transparent;
+      background:
+        linear-gradient(90deg, var(--cards_bg_type_1), var(--cards_bg_type_1)) padding-box,
+        linear-gradient(45deg, var(--gradient_start),var(--gradient_end)) border-box;
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-center;
+      @extend .flex-h-center;
+      margin-right: 30px;
+
+      img {
+        max-width: 90%;
+        width    : auto;
+        height   : auto;
+      }
+
+      //&:before {
+      //  content      : "";
+      //  position     : absolute;
+      //  z-index      : -1;
+      //  top          : 0;
+      //  left         : 0;
+      //  right        : 0;
+      //  bottom       : 0;
+      //  padding      : 2px;
+      //  border-radius: 30px;
+      //  background   : linear-gradient(to right, var(--gradient_start), var(--gradient_end));
+      //  -webkit-mask :
+      //    linear-gradient(#fff 0 0) content-box,
+      //    linear-gradient(#fff 0 0);
+      //  -webkit-mask-composite: destination-out;
+      //  mask-composite        : exclude;
+      //}
+    }
+
+    .content {
+      width: calc(100% - 290px);
+      @extend .flex;
+      @extend .flex-wrap;
+      @extend .flex-v-start;
+      @extend .flex-h-start;
+
+      .name {
+        width  : 100%;
+        display: block;
+        @include font('Sentral', 30px, var(--white), 700, 36px);
+
+        &:after {
+          content      : '';
+          display      : block;
+          width        : 100%;
+          height       : 4px;
+          border-radius: 2px;
+          background   : linear-gradient(to right, #cb2573 0%, #47069a 100%);
+          margin       : 25px 0;
+        }
+      }
+
+      .line {
+        width        : 100%;
+        margin-bottom: 10px;
+        @extend .flex;
+        @extend .flex-wrap;
+        @extend .flex-v-start;
+        @extend .flex-h-start;
+
+        .nm {
+          display: block;
+          width  : 80%;
+          @include font('Sentral', 24px, var(--white), 700, 32px);
+        }
+
+        .val {
+          width  : 20%;
+          display: block;
+          @include font('Sentral', 24px, var(--white), 700, 32px);
+          background-image       : -o-linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image       : -o-linear-gradient(76deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          background-image       : linear-gradient(14deg, var(--gradient_start), #eb3de7 50%, var(--gradient_end));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-align             : right;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      padding      : 5px 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+
+      .thumb {
+        max-width    : 70px;
+        height       : 70px;
+        border-radius: 10px;
+        margin-right : 10px;
+
+        img {
+          max-width: 80%;
+        }
+
+        &:before {
+          border-radius: 10px;
+        }
+      }
+
+      .content {
+        width: calc(100% - 80px);
+
+        .name {
+          font-size  : 14px;
+          line-height: 18px;
+
+          &:after {
+            margin: 5px 0;
+            height: 2px;
+          }
+        }
+
+        .line {
+
+          .nm,
+          .val {
+            font-size  : 12px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .infoContent {
+    width: 100%;
+    @include font('Sentral', 18px, var(--white), 700, 26px);
+
+    @media screen and (max-width: 560px) {
+      font-size  : 14px;
+      line-height: 22px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      width        : 100%;
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 560px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    h1 {
+      @include font('Sentral', 36px, var(--white), 700, 44px);
+
+      @media screen and (max-width: 560px) {
+        font-size  : 18px;
+        line-height: 26px;
+      }
+    }
+
+    h2 {
+      @include font('Sentral', 30px, var(--white), 700, 38px);
+
+      @media screen and (max-width: 560px) {
+        font-size  : 15px;
+        line-height: 20px;
+      }
+    }
+
+    p {
+      width        : 100%;
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 560px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    b,
+    strong {
+      font-weight: 700;
+    }
+
+    em,
+    i {
+      font-style: italic;
+    }
+
+    img {
+      width        : 100%;
+      height       : auto;
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 560px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__related {
+    width: 100%;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-center;
+    margin-bottom: 100px;
+
+    .newsPageSingle__related {
+      margin-top: 25px;
+    }
+
+    @media screen and (max-width: 560px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__similar,
+  &__fromDev {
+    width: 100%;
+
+    .title {
+      font-size  : 36px;
+      line-height: 44px;
+      font-weight: 900;
+    }
+
+    &--slider {
+      width   : 100%;
+      position: relative;
+
+      .slotsPage__item {
+        width       : calc(20% - 32px);
+        margin-right: 40px;
+
+        @media screen and (max-width: 1280px) {
+          width: calc(25% - 30px);
+        }
+
+        @media screen and (max-width: 992px) {
+          width       : calc(33.3333% - 20px);
+          margin-right: 30px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      .title {
+        font-size  : 16px;
+        line-height: 22px;
+      }
+
+      &--slider {
+        .slotsPage__item {
+          width       : calc(80% - 20px);
+          margin-right: 20px;
+        }
+      }
+
+      .newsPageSingle__inf {
+        margin-bottom: 15px;
+      }
+
+      .newsPageSingle__navs {
+        width      : 35px;
+        margin-left: auto;
+
+        .newsPageSingle__btn {
+          width : 10px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+
+  .infoMobileHide {
+    display: none;
+    @extend .flex-wrap;
+    @extend .flex-v-start;
+    @extend .flex-h-start;
+    width: 100%;
+
+    .casinoRatingWidget,
+    .gameInformationWidget,
+    .gamesCategories {
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 560px) {
+      .casinoRatingWidget {
+        padding: 10px 25px;
+
+        .thumb {
+          img {
+            height: 80px;
+            width : auto;
+          }
+        }
+
+        .rating,
+        .ratingValue {
+          font-size  : 16px;
+          line-height: 22px;
+        }
+      }
+
+      .gameInformationWidget {
+
+        &__title {
+          font-size    : 18px;
+          line-height  : 22px;
+          margin-bottom: 15px;
+        }
+
+        .item {
+          font-size    : 14px;
+          line-height  : 22px;
+          margin-bottom: 10px;
+
+          &.with_txt {
+            .txt {
+              max-width: 50%;
+            }
+          }
+        }
+      }
+
+      .gamesCategories {
+        &__title {
+          font-size    : 18px;
+          line-height  : 22px;
+          margin-bottom: 15px;
+        }
+
+        &__items {
+          position: relative;
+          width   : 100%;
+          display : block;
+
+          .item {
+            font-size  : 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .infoMobileHide {
+      display: flex;
+    }
+  }
+
+
+  @media screen and (max-width: 560px) {
+    padding-top: 85px;
+  }
+}
